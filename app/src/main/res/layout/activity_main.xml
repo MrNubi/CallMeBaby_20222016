@@ -5,9 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전화번호입력"
+        android:id="@+id/callNum"
+        android:inputType="phone"></EditText>
+
+    <Button
+        android:id="@+id/btn_Dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전화걸기"></Button>
 
 
 
