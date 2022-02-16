@@ -40,6 +40,19 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btn_Message.setOnClickListener {
+
+            val phoneNumber = EDT_Phone.text.toString()
+
+            //인텐트는 항상 어디론가 향해있어야 함, URI로 알려줘라
+            val mUrii = Uri.parse("smsto:$phoneNumber")//띄어쓰기는 오류 원인
+
+            val intent = Intent(Intent.ACTION_SENDTO, mUrii)
+
+            startActivity(intent)
+
+        }
+
 
 
     }
