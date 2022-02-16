@@ -1,7 +1,10 @@
 package com.beyond.callmebaby_20222016
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,6 +12,20 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        btn_Dial.setOnClickListener {
+
+            val phoneNumber = EDT_Phone.text.toString()
+
+            //인텐트는 항상 어디론가 향해있어야 함, URI로 알려줘라
+            val mUrii = Uri.parse("tel:$phoneNumber")//띄어쓰기는 오류 원인
+
+            val intent = Intent(Intent.ACTION_DIAL, mUrii)
+
+            startActivity(intent)
+
+        }
 
 
 

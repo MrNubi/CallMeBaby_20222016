@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="전화번호입력"
-        android:id="@+id/callNum"
+        android:id="@+id/EDT_Phone"
         android:inputType="phone"></EditText>
 
     <Button
