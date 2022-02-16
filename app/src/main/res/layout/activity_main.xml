@@ -42,6 +42,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="문자전송"></Button>
+    <Button
+        android:id="@+id/btn_Naver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Naver"></Button>
+    <Button
+        android:id="@+id/btn_Kakao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kakao"></Button>
 
 
 

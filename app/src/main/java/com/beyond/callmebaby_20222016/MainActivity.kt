@@ -57,6 +57,36 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btn_Naver.setOnClickListener {
+
+            val phoneNumber = EDT_Phone.text.toString()
+
+            //인텐트는 항상 어디론가 향해있어야 함, URI로 알려줘라
+            val mUrii = Uri.parse("https://naver.com")//띄어쓰기는 오류 원인
+            //웹페이지로 바로 보내는 링크
+            val intent = Intent(Intent.ACTION_VIEW, mUrii)
+
+            startActivity(intent)
+
+        }
+
+        btn_Kakao.setOnClickListener {
+
+            val phoneNumber = EDT_Phone.text.toString()
+
+            //인텐트는 항상 어디론가 향해있어야 함, URI로 알려줘라
+            val mUrii = Uri.parse("market://details?id=com.kakao.talk")//띄어쓰기는 오류 원인
+
+            // PlayStore로 바로 보내주는 링크
+            val intent = Intent(Intent.ACTION_VIEW, mUrii)
+
+            startActivity(intent)
+
+        }
+
+        //이외에도 메일 앱으로 링크주기, 지도 앱으로 링크 주기 등 다양함
+
+
 
 
     }
