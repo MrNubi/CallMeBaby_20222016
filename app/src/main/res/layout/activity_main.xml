@@ -31,6 +31,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="전화걸기"></Button>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="문자 내용 입력"
+        android:id="@+id/EDT_SMS"></EditText>
     <Button
         android:id="@+id/btn_Message"
         android:layout_width="match_parent"
